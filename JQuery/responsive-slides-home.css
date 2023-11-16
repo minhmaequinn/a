@@ -1,0 +1,178 @@
+/* http://responsiveslides.com v1.54 by @viljamis */
+/* ALLWEBCO DESIGN Ver 1.0 */
+
+
+
+
+/***************
+NOTE -----
+TO EDIT THE COLORS EDIT
+THE CSS FILES IN YOUR "colors" FOLDER
+***************/
+
+
+
+
+/* DEFAULTS */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  width: 100%;
+  border: 0;
+ }
+
+.rslides { margin: 0 auto; }
+
+.rslides_container {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	}
+
+
+
+
+/* START NEXT / BACK BUTTON STYLES (ARROW IMAGE IN jQuery FOLDER) */
+
+.centered-btns_nav {
+	z-index: 3;
+	opacity: 1.0;
+	text-indent: -9999px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 50px;
+/* FADE UP */
+	transition: border 0.5s ease;
+	-webkit-transition: border 0.5s;
+/* CORNER ROUNDING */
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	}
+
+.centered-btns_nav.prev {
+	background: #000000 url("JQ-prev-white.png") no-repeat center center;
+	border: #000000 0px solid;
+	width: 50px;
+	position: absolute;
+	left: 25px;
+	bottom: 25px;
+	}
+
+.centered-btns_nav.next {
+	background: #000000 url("JQ-next-white.png") no-repeat center center;
+	border: #000000 0px solid;
+	width: 50px;
+	position: absolute;
+	left: 79px;
+	bottom: 25px;
+	}
+
+.centered-btns_nav.prev:hover,
+.centered-btns_nav.next:hover {
+	background-color: #D70013;
+	border: #99FF66 0px solid;
+	}
+
+.centered-btns_nav:active {
+	opacity: 0.8;
+	}
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+	outline: none;
+	}
+
+
+
+
+/* START ROUND ACTIVE BUTTON STYLES */
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+	max-width: 100%;
+	padding: 0px;
+	text-align: center;
+	zoom: 1;
+	margin: 0px auto 0px auto;
+	}
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+	margin: 0px;
+	display: inline;
+	float: none;
+	_float: left;
+	*float: left;
+	}
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a 
+	{
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	_display: block;
+	*display: none; /* HIDES BUTTONS IN OLDER IE BROWSERS */
+	}
+
+
+
+/***************
+START Media Queries #1 WHEN PAGE WIDTH LESS THAN 990
+***************/
+@media handheld and (max-width: 990px),
+   screen and (max-device-width: 990px),
+   screen and (max-width: 990px) 
+	{
+
+
+.centered-btns_nav { height: 25px; }
+
+.centered-btns_nav.prev {
+	width: 25px;
+	left: 10px;
+	bottom: 10px;
+	}
+
+.centered-btns_nav.next {
+	width: 25px;
+	left: 38px;
+	bottom: 10px;
+	}
+
+
+
+	}
+/***************
+END Media Queries #1
+***************/
