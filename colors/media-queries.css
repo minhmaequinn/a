@@ -1,0 +1,419 @@
+/* WARNING: USE CAUTION WHEN EDITING THIS FILE */
+
+/* NOTE: THIS FILE INCLUDES 3 STAGES OF MEDIA QUERIES - SEE help.html */
+
+/* NOTE: TO EDIT COLORS - SEE style.css */
+
+/* CLASSES HERE CAN ALSO BE FOUND IN THE style.css */
+
+
+
+
+
+
+/***************
+START Media Queries #1 WHEN PAGE WIDTH LESS THAN 990 IS ACTIVE (FOR TABLET)
+***************/
+@media handheld and (max-width: 990px),
+   screen and (max-device-width: 990px),
+   screen and (max-width: 990px) 
+	{
+
+
+
+.title 		{ font-size: 1.60em; }
+
+.subtitle 	{ font-size: 1.20em; }
+
+.just		{ text-align: left; }
+
+
+
+/* MQS GENERAL */
+
+#contentbox	{ margin-right: -270px; }
+
+.content-pad 	{ padding: 15px 15px 15px 15px; }
+
+.content-pad-gal { padding-top: 15px; }
+
+#left-content 	{ margin-right: 270px; }
+
+.SB-width	{ width: 270px; }
+
+.sidebar-box	{ padding: 0px 20px 0px 0px; }
+
+.floatlist	{ width: 100%; float: none; }
+
+
+
+/* MQS HOME PAGE */
+
+.rslides_container li div.ltext,
+.homeimage-borderNA div.ltext	{ width: 350px; }
+
+.ltext div {
+	font-size: 0.90em;
+	line-height: normal;
+	padding: 30px 20px 15px 20px;
+	}
+
+.rslides-title	{ font-size: 2.0em; }
+
+#homeJQ .centered-btns_nav { width: 25px; height: 25px; }
+
+#homeJQ .centered-btns_nav.prev {
+	width: 25px;
+	left: 10px;
+	bottom: 10px;
+	}
+
+#homeJQ .centered-btns_nav.next {
+	width: 25px;
+	left: 38px;
+	bottom: 10px;
+	}
+
+
+
+/* MQS ROW OF 3x IMAGES */
+
+a.link-3x	{ font-size: 1.0em; padding: 8px 3px 8px 3px; }
+
+
+
+/* CONTACT PAGE */
+
+.form-box			  { margin: 10px 0px 10px 0px; }
+
+
+
+/* GALLERY PAGES*/
+
+#gal-menu a.hidemobgal	   { display: none; }
+
+.Gal-details	{
+		padding: 10px 0px 5px 0px;
+		margin: 0px 5px 20px 5px;
+		}
+
+
+
+/* CART PAGES */
+
+.cartrow-box	{
+		float: left;
+		width: 50%;
+		}
+
+.cartrow-box:nth-child(3n+1)
+		{
+		clear:none;
+		}
+
+.cartrow-box:nth-child(2n+1)
+		{
+		clear:both;
+		}
+
+.Cart-details	{ margin: 0px 5px 10px 5px; }
+
+
+
+/* FOOTER MENU */
+
+#FTmenu a 	{
+		font-size: 0.95em;
+		padding: 14px 10px 14px 10px;
+		}
+
+
+
+	}
+/***************
+END Media Queries #1
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #2 WHEN PAGE WIDTH LESS THAN 740 IS ACTIVE
+***************/
+@media handheld and (max-width: 740px),
+   screen and (max-device-width: 740px),
+   screen and (max-width: 740px) 
+	{
+
+
+
+/* MQS FONTS - NEXT LINE IS DEFAULT FONT ALL PAGES */
+
+body, div, table { font-size: medium; }
+
+
+
+/* MQS PAGE LAYOUT */
+
+#contentbox-outer { min-width: 300px; }
+
+.pageheight	{ min-height: 50px; }
+
+#contentbox	{
+		float: none;
+		margin-right: 0px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		}
+
+.content-pad 		{ padding: 15px 20px 20px 20px; }
+
+.content-pad-gal	{ padding-top: 15px; }
+
+#left-content 		{ width: 100%; min-width: 100%; margin-right: 0px; }
+
+.SB-width		{ width: 250px; }
+
+#sidebar-content 	{ float: none; display: block; margin: 0 auto; }
+
+.sidebar-box		{ padding: 0px 0px 0px 0px; }
+
+
+
+/* MQS FOOTER */
+
+#FTmenu			{ display: none; }  /* HIDES FOOTER MENU */
+
+.footer-copyright	{ border-width: 0px 0px 3px 0px; }
+
+
+
+/* HEADER & FIXED HEADER & MENU CODE */
+
+.header-ico1, 
+.ico1-img, 
+.header-ico2, 
+.ico2-img	{ width: 30px; height: 30px; display: block; }
+
+.header-ico1	{ display: none; }  /* HIDE OR SHOW HEADER ICON */
+
+.header-ico2	{ display: block; }  /* HIDE OR SHOW HEADER ICON */
+
+.logo-respond	{ width: 100%; height: auto; }
+
+.textlogo	{ font-size: 22px; letter-spacing: 0px; height: auto; padding: 8px 8px 8px 8px; }
+
+.logoslogan	{ font-size: 13px; }
+
+#fixed-header	{ position: static; }
+
+#header-fix-space { display: none; }
+
+
+
+/* MQS HOME PAGE */
+
+.rslides_container li div.ltext,
+.homeimage-borderNA div.ltext	{ display: none; } /* HIDE JQUERY LAYERED TEXT */
+
+/* MQS HOME 2 COLUMN TEXT */
+
+.home-2xcontent		{ float: none; width: auto; margin: 0 auto; }
+
+.content-left2x		{ padding: 20px 0px 15px 0px; }
+
+.content-right2x	{ padding: 20px 0px 15px 0px; }
+
+
+/* MQS ROW OF 3x IMAGES */
+
+.img-3x-outer	{ margin: 15px auto 15px auto; }
+
+a.link-3x	{ font-size: 0.90em; padding: 8px 3px 8px 3px; }
+
+.img-3x-expand:hover > a { bottom: 20px; }
+
+
+
+/* PDF PAGE */
+
+.pdf-box	{ max-width: 100%; }
+
+
+
+/* MQS SLIDESHOWS */
+
+.centered-btns_tabs a 	{
+			width: 10px;
+			height: 10px;
+			margin: 0px 2px 0px 2px;
+			}
+
+
+
+	}
+/***************
+END Media Queries #2
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #3 -  WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE
+                      CLASSES HERE CAN ALSO BE FOUND IN THE style.css
+***************/
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+
+
+/* MQS FONTS - NEXT LINE IS DEFAULT MOBILE FONT ALL PAGES */
+
+body, div, table { font-size: small; line-height: 145%; }
+
+.just 		 { text-align: left; }
+
+
+
+/* MQS GENERAL */
+
+.hidemobile	   { display: none; }
+
+.splits-xtramargin { margin-top: 10px; margin-bottom: 10px; }
+
+.page-splits	   { margin-top: 10px; margin-bottom: 10px; }
+
+
+
+/* MQS PAGE & CONTENT HEIGHTS, PADDING & WIDTHS */
+
+.pagebox	{ padding: 0px 0px 0px 0px; }
+
+#contentbox	{ padding: 0px 0px 0px 0px; }
+
+.content-pad 	{ padding: 15px 10px 10px 10px; }
+
+.content-pad-gal { padding-top: 15px; }
+
+
+
+/* MQS LOGO GRAPHIC, AND TEXT */
+
+#headerdiv	{ padding: 0px 0px 0px 0px; }
+
+.logo-respond	{ height: auto; width: 100%; }
+
+
+
+/* MQS ROW OF 3x IMAGES */
+
+a.link-3x	{ font-size: 1.1em; padding: 5px 3px 5px 3px; }
+
+.img-3x-box	{ display: block; width: auto; margin: 8px auto 8px auto; max-width: 300px; }
+
+
+
+/* MQS SIDEBAR */
+
+.sidebar-text	{ font-size: 1.0em; line-height: normal; }
+
+.side-links a	{ font-size: 1.05em; line-height: normal; }
+
+
+
+/* CONTACT PAGE */
+
+.form-box			  { margin: 10px 0px 10px 0px; }
+
+.shadeform, .textarea, .dropdown  { font-size: 14px; }
+
+input[type=submit].submitbutton, 
+input[type=reset].submitbutton	  { font-size: 15px; }
+
+
+
+/* GALLERY */
+
+.galrow-box	{
+		float: left;
+		width: 50%;
+		}
+
+.galrow-box:nth-child(3n+1)
+		{
+    		clear:none;
+		}
+
+.galrow-box:nth-child(2n+1)
+		{
+    		clear:both;
+		}
+
+
+
+/* SHOPPING CART */
+
+.cart-canvas	{ padding: 5px 0px 0px 0px; }
+
+.cart-page #gal-menu	{ display: none; }
+
+.cart-view-box	{
+		position: static;
+		top: 0px;
+		right: 0px;
+		padding: 5px 0px 0px 5px;
+		}
+
+.cartrow-box	{
+		float: none;
+		width: 100%;
+		}
+
+.cartrow-box:nth-child(2n+1)
+		{
+    		clear:none;
+		}
+
+.cartrow-box:nth-child(1n+1)
+		{
+    		clear:both;
+		}
+
+input[type=submit].button-order 
+		{
+		font-size: 16px;
+		}
+
+
+
+/* LINKS PAGE */
+
+.searchform, .searchbutton  { font-size: 14px; }
+
+
+
+/* PAYMENTS PAGE */
+
+.payform, input[type=submit].payform	{ width: 140px; }
+
+.paypalbadge { width: 80px; }
+
+
+
+	}
+/***************
+END Media Queries #3
+***************/
+
+
+
+
+
