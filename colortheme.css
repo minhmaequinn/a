@@ -1,0 +1,21 @@
+/*							*/
+/*	Copyright 2020 © Allwebco Design Corporation	*/
+/*							*/
+/*							*/
+/*	COLORS THAT CAN BE USED (all lowercase):	*/
+/*	black | gray | teal | whitegray | white		*/
+/*------------------------------------------------------*/
+/*   1ST LINE IS FOR PAGES, 2ND LINE IS FOR THE MENU	*/
+
+
+/* EDIT MAIN COLORS ON NEXT 2 LINES (colors above) */
+
+@import url("colors/black.css");
+
+@import url("colors/black-menu.css");
+
+
+
+/* MEDIA QUERIES FOR MOBILE - DO NOT EDIT */
+
+@import url("colors/media-queries.css");
